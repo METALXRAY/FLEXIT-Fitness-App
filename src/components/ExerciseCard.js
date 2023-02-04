@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button, Stack, Typography } from "@mui/material";
 
 const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
-const endpoint = `http://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=exercise`;
+const endpoint = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=exercise`;
 
 const ExerciseCard = ({ exercise }) => {
 	const [gifUrl, setGifUrl] = useState("");
