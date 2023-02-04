@@ -17,7 +17,7 @@ const ExerciseCard = ({ exercise }) => {
 	}, []);
 
 	return (
-		<Link className='exercise-card' to={`/exercise/${exercise.id}`}>
+		<Link className='exercise-card' to={`/exercise/${exercise.name}`}>
 			<img src={gifUrl} alt={exercise.name} loading='lazy' />
 			<Stack direction='row'>
 				<Button
@@ -30,7 +30,7 @@ const ExerciseCard = ({ exercise }) => {
 						textTransform: "capitalize",
 					}}
 				>
-					{exercise.bodyPart}
+					{exercise.equipment}
 				</Button>
 				<Button
 					sx={{
@@ -42,7 +42,7 @@ const ExerciseCard = ({ exercise }) => {
 						textTransform: "capitalize",
 					}}
 				>
-					{exercise.target}
+					{exercise.muscle}
 				</Button>
 			</Stack>
 			<Typography
