@@ -11,9 +11,12 @@ const ExerciseCard = ({ exercise }) => {
 	useEffect(() => {
 		fetch(endpoint)
 			.then((response) => response.json())
-			.then((data) => {
-				setGifUrl(data.data.images.original.url);
-			});
+			.then(
+				(data) => {
+					setGifUrl(data.data.images.original.url);
+				},
+				{ mode: "no-cors" }
+			);
 	}, []);
 
 	return (
