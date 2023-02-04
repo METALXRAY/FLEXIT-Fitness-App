@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import ExerciseDetails from "./pages/ExerciseDetails";
 import Footer from "./components/Footer";
 
+import "./App.css";
+
 const App = () => {
 	return (
 		<Box width='400px' sx={{ width: { xl: "1488px" } }} m='auto'>
